@@ -1,0 +1,429 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Les vélos QUISONTBEAUX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="">
+    <link rel="icon" href="../libs/img/icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../libs/css/main.css">
+    <link rel="stylesheet" href="../libs/css/classiqueCss.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+
+
+<header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+        <a href="../index.html"><img src="../libs/img/logo.png"  class="logo" alt="logo"></a>
+
+        <h1 class="text-light ml-auto">Les vélos QUISONTBEAUX</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <a href="https://fr-fr.facebook.com/" class="mx-auto" target="_blank"><span class="fa fa-facebook-official fa-3x " aria-hidden="true"></span></a>
+            <span class="navbar-text-right ml-auto">
+
+      <!-- Button  modal -->
+
+<button type="button" class="btn btn-primary pl-2 " data-toggle="modal" data-target="#loginModal">
+  Connectez-vous
+</button>
+
+      </span>
+        </div>
+    </nav>
+
+</header>
+
+<div class="w-100">
+<div class="row">
+    <div class="col-md-6 my-auto">
+        <img src="../libs/img/classique.jpg" id="" class="w-100 ml-2" alt="Api Carte"/> <!-- TODO a remplacer par l api map-->
+    </div>
+    <div class="col-md-6 my-1" id="formulaire">
+        <form action=" " class="w-100" >
+            <div class="form-group row">
+                <div class="col-md-1"></div>
+                <label for="type" class="col-md-5 col-form-label">Type de vélo</label>
+                <div class="col-md-5">
+                    <select name="type" class="form-control text-center" id="type"  >
+                        <option value="1"> Classiques </option>
+                        <option value="2"> Electriques </option>
+                    </select>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-1"></div>
+                <label for="resadate" class="col-md-5 col-form-label">Date du départ</label>
+                <div class="col-md-5">
+                    <input type="date" maxlength="50" name="nom" class="form-control" id="resadate"  required>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-1"></div>
+                <label for="heure" class="col-md-5 col-form-label">Heure du départ</label>
+                <div class="col-md-5">
+                    <input type="time" maxlength="50" name="prenom" class="form-control" id="heure"  required>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-1"></div>
+                <label for="duree1" class="col-md-5 col-form-label">Durée de location souhaitée</label>
+
+                <div class="col-md-2">
+                    <select  class="form-control "    name="duree" id="duree1">
+                        <option value="1 ">1 </option>
+                        <option value="2 ">2 </option>
+                        <option value="3 ">3 </option>
+                        <option value="4 ">4 </option>
+                        <option value="5 ">5 </option>
+                        <option value="6 ">6 </option>
+                        <option value="7 ">7 </option>
+                        <option value="8 ">8 </option>
+                        <option value="9 ">9 </option>
+                        <option value="10 ">10 </option>
+                        <option value="11 ">11 </option>
+                        <option value="12 ">12 </option>
+                        <option value="13 ">13 </option>
+                        <option value="14 ">14 </option>
+                        <option value="15 ">15 </option>
+                        <option value="16 ">16 </option>
+                        <option value="17 ">17 </option>
+                        <option value="18 ">18 </option>
+                        <option value="19 ">19 </option>
+                        <option value="20 ">20 </option>
+                        <option value="21 ">21 </option>
+                        <option value="22 ">22 </option>
+                        <option value="23 ">23 </option>
+                        <option value="24 ">24 </option>
+                    </select>
+
+                </div>
+                <div class="col-md-3">
+
+                    <select  class="form-control "    name="duree" id="duree2">
+                        <option value="1 "> Heure(s)</option>
+                        <option value="2 "> jour(s)</option>
+                        <option value="3 "> Mois</option>
+                        <option value="4 "> Année(s)</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-1"></div>
+                <label for="sujet" class="col-md-5 col-form-label">Nombre de vélos souhaité</label>
+                <div class="col-md-5">
+                    <select  class="form-control "    name="sujet" id="sujet">
+                        <option value="1 ">1 </option>
+                        <option value="2 ">2 </option>
+                        <option value="3 ">3 </option>
+                        <option value="4 ">4 </option>
+                        <option value="5 ">5 </option>
+                        <option value="6 ">6 </option>
+                    </select>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-1"></div>
+                <label for="choixborne" class="col-md-5 col-form-label">Choix de la borne</label>
+                <div class="col-md-5">
+                    <select  class="form-control "    name="choixborne" id="choixborne">
+                        <option value="1 ">Grand Place </option>
+                        <option value="2 ">Porte des postes </option>
+                        <option value="3 ">Rue Nationale </option>
+                        <option value="4 ">Musée </option>
+                        <option value="5 ">Piscine  </option>
+                        <option value="6 ">Mairie </option>
+                    </select>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-1"></div>
+                <label for="message" class="col-md-5 col-form-label">Un message pour nos équipes?</label>
+                <div class="col-md-5">
+                    <textarea name="message" spellcheck="true" id="message" rows="6" class="form-control" placeholder="Votre message"></textarea>
+                    <p id="compteur">0 mots - 0 Caracteres / 3000</p>
+                </div>
+
+            </div>
+
+            <div class="form-group row mt-3 groupeBouton">
+
+                <div class="col-md-1"></div>
+                <div class="pt-5"></div>
+                <button type="submit" class="col-md-10  btn btn-outline-dark  mb-4 form-control ">Je réserve!</button>
+                <div class="col-md-3"></div>
+                <button type="reset" class="col-md-6 col-sm-3 btn btn-outline-dark  mb-3 form-control ">Reset</button>
+                <div class="col-md-3"></div>
+            </div>
+
+        </form>
+</div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+
+<div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                    <div class="form-group">
+                        <a data-dismiss="modal" data-toggle="modal" data-target="#exampleModalCenter" class="float-right" id="new">Nouvel utilisateur?</a>
+                        <label for="uname1">Utilisateur</label>
+                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
+                        <div class="invalid-feedback">Oops, raté.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd1">Mot de passe</label>
+                        <input type="password" class="form-control form-control-lg" name="pwd1" id="pwd1" required="" autocomplete="new-password">
+                        <div class="invalid-feedback">Mot de passe</div>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="rememberMe">
+                        <label class="custom-control-label" for="rememberMe">Se souvenir de moi.</label>
+                    </div>
+                    <div class="form-group py-4">
+                        <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal inscription-->
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Inscription</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="inputText2">Nom *</label>
+                        <input placeholder="Dupont" type="text" class="form-control" id="inputText2" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputText3">Prénom *</label>
+                        <input placeholder="Dupont" type="text" class="form-control" id="inputText3" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail2">Adresse Email *</label>
+                        <input placeholder="Dupont.dupont@gmail.com" type="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAdresse">Adresse *</label>
+                        <input type="text" class="form-control" id="inputAdresse" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputVille">Ville *</label>
+                        <input type="text" class="form-control" id="inputVille" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword2">Mot de passe *</label>
+                        <input type="password" class="form-control" id="inputPassword2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3">Confirmez le mot de passe *</label>
+                        <input type="password" class="form-control" id="inputPassword3" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2" required>
+                        <label class="form-check-label" for="exampleCheck2">J'accepte <a href="../templates/cgv.html#article" target="_blank">les conditions générales d'utilisations</a>*</label>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger mr-auto" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-info ml-auto">S'inscrire</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="page-footer font-small bg-light pt-4 pb-2">
+
+    <!-- Footer Links -->
+    <div class=" text-center text-md-left " id="footer">
+
+        <!-- Grid row -->
+        <div class="row justify-content-around mx-auto">
+
+
+            <!-- Grid column -->
+            <div class="marge_footer col-md-2 col-lg-2  text-center ">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mb-2">Rubriques</h5>
+
+                <ul class="list-unstyled ">
+                    <li>
+                        <p>
+                            <a href="../index.html#menuCards">Accueil</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="../templates/reservationClassiques.html">Location vélos classiques</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="../templates/reservationElectriques.html">location vélos électriques</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="../templates/cgv.html">Infos</a>
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+
+
+            <div class="marge_footer col-md-2 col-lg-2 text-center px-0">
+
+                <!-- Contact details -->
+                <h5 class="font-weight-bold text-uppercase mb-2">Contacts</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <span class="fa fa-home" aria-hidden="true"></span> 3 allée du parc 53240 Alexain</p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="fa fa-envelope" aria-hidden="true"></span> easyloc@lesvelosquisontbeaux.fr
+                        </p>
+                    </li>
+                    <li>
+                        <p>SIRET n°82286232800013</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="../templates/contact.html">Nous écrire</a>
+                        </p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+
+
+            <div class="marge_footer col-md-2 col-lg-2 text-center  ">
+
+                <!-- Social buttons -->
+                <h5 class="font-weight-bold text-uppercase mb-2 ">Nous suivre</h5>
+
+                <ul class="list-unstyled pt-2">
+                    <li>
+
+                        <a href="https://www.facebook.com/" target="_blank"> <span class="fa fa-facebook-official fa-3x " aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="https://www.linkedin.com/" target="_blank"> <span class="fa fa-linkedin fa-3x " aria-hidden="true"></span></a>
+
+
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <div class="footer-copyright text-center py-3 text-light bg-dark ">© 2020 Copyright:
+
+        </div>
+    </div>
+
+
+
+
+
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+<!-- Add your site or application content here -->
+
+<script src="libs/js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="libs/js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="libs/js/plugins.js"></script>
+<script src="libs/js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

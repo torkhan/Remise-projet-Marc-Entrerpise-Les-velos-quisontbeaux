@@ -1,0 +1,20 @@
+.card{
+    width: 80%;
+    border-radius: 15px;
+
+}
+.card:hover {
+    transform: translateY(-4px);
+    transition: .4s;
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
+.col-md-6{
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+.row{
+    width: 100%;
+}

@@ -1,0 +1,67 @@
+
+.logo{
+  width: 45%;
+}
+#new{
+  text-decoration-line: underline;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+
+
+  /*debut media-queries*/
+  /*smartphones*/
+
+  @media screen and (max-width: 499px) {
+
+    .container-formulaire {
+      width: 100% !important;
+      margin: 20% 0% 0% 0% !important;
+    }
+    #boutonModal{
+      margin-bottom: 2% !important;
+    }
+    .row{
+      margin-left: 0;
+      margin-left: 0;
+
+    }
+    .card{
+      width: 100% !important;
+      margin-bottom: 2%;
+    }
+  }
+  /*tablettes*/
+
+  @media screen and (max-width: 670px) {
+    .container-formulaire {
+      width: 100% !important;
+    }
+    #boutonModal{
+      margin-bottom: 2% !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #boutonModal{
+      margin-bottom: 2% !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    #boutonModal{
+      margin-bottom: 2% !important;
+    }
+
+  }
+  /*jusqua 1200px ipadpro*/
+
+  @media screen and (max-width: 1200px) {
+    .container-formulaire {
+      width: 100% !important;
+    }
+
+  }
+
+  
